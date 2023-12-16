@@ -1,0 +1,15 @@
+div {
+  text-align: center;
+}
+h1 {
+  font: bold;
+  color: darkorchid;
+}
+li {
+  text-align: center;
+}
+.modify {
+  position: relative;
+  left: 80px;
+  bottom: 19px;
+}
