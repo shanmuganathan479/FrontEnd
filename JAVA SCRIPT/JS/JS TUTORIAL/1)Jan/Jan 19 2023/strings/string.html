@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String</h1>
+    <p>set of characters enclosed with ""</p>
+    <script>
+        let name = "shan";
+        document.write(name)
+    </script>
+    <h2>we can use '' or ""</h2>
+    <script>
+        let fname = "shan";
+        let lname = 'stark';
+        document.write(fname,lname)
+    </script>
+    <h2>we can use quotes in b/w quotes it wont affeCt
+    </h2>
+    <script>
+        let fullName = "'s'shanmuganthan"
+        document.write(fullName)
+    </script>
+    <h2>Find length</h2>
+    <script>
+        let count = "shanmuganthan hesha papz"
+        document.write(count.length)
+    </script>
+    <h2>Escape character</h2>
+    <li>\ => backslash</li>
+    <li>\'\' => single quotes</li>
+    <li>\"\" => double quotes</li>
+    <script>
+        let tesr = "\'s\'shanmuganthan"
+        document.write(tesr)
+    </script>
+    <h2>We can break after after operator</h2>
+    <p>for best readability only write 80 characters per line</p>
+     <h2>String as object</h2>
+     <script>
+        let word = "shan";
+        let w = new String("shan");
+        document.write(typeof word)
+        document.write(typeof w)
+     </script>
+     <h2>==, === operator</h2>
+     <li>== => equal to </li>
+     <li> == => equal to with same data type</li>
+     <script>
+        let pap= "hesha";
+        let p = new String ("hesha")
+        document.write(pap == p)
+        document.write(pap === p)
+     </script>
+
+</body>
+</html>

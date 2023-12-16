@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <p style="color: red;">Functions running with parllel other function called asynchronous</p>
+     
+    <h2>1) EXAMPLE</h2>
+    <script>
+        function add(value){
+            document.write(value)        
+        }
+
+        function args(v1,v2,callback){
+            let sum = v1 + v2;
+            callback(sum)
+        }
+
+         args(33,48,add);
+    </script>
+
+    <p style="color: red">here , add is one function it is passed as a argument to args() function</p>
+
+    <h2>2) Callback Use</h2>
+    <p style="color: red"> callback are often used in asynchronous operation </p>
+    <p style="color: red"> example is => setTimeout()</p>
+
+    <h2>3) Waiting for tymout</h2>
+    <h2 id="ans"></h2>
+    <script>
+        setTimeout(handleMessage,5000);
+
+         function handleMessage(){
+            document.getElementById('ans').innerHTML = "Hiii shan ........"
+         }
+    </script>
+
+    <p style="color: red;"> handleMessage is callback . it will run after 5 secs</p>
+
+    <h2>4) With argument</h2>
+    <h2 id="ans2"></h2>
+    <script>
+         
+         setTimeout(function(){doMessage("Daiii shan.......")},3000);
+        const doMessage =(value)=>{
+            document.getElementById('ans2').innerHTML = value ;    
+        }
+    </script>
+
+    <h2>5) Waiting for intervals</h2>
+    <h2 id="ans3"></h2>
+      <script>
+        
+     setInterval(handleTym,1000);  
+    function handleTym(){
+        const d = new Date();
+        document.getElementById('ans3').innerHTML = 
+        d.getHours() + ":" +
+        d.getMinutes() + ":"+
+        d.getSeconds() ;
+    }
+      </script>
+
+      <p style="color: red;"> handleTym() is passed as a callback to setInterval function()</p>
+</body>
+</html>

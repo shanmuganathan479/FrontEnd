@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boolean</h1>
+    <p>Boolean represent on two values <span style="color: red;">True or False</span></p>
+    
+    <h2>1)Boolean function()</h2>
+    <script>
+       document.write(Boolean(10 > 5))
+    </script>
+    
+    <h2>2) Comparison and conditions</h2>
+    <p>It contains comparsion operators</p>
+    <li>==</li>
+    <li>></li>
+    <li><</li>
+
+    <h2>3) JS Booleans</h2>
+    <script>
+        let x ;      // undefined
+        let y = null; // null
+        let z = false ;
+        let a = 1 / "value";
+        document.write("1) Any value is =>",Boolean(100),"<br/>","2) Any string is =>",Boolean("shan"),"<br/>","3) Negative value also =>",Boolean(-33),"<br/>","4) Any Expression is (Except 0) =>",Boolean(1+1+2),
+        "<br/>","5) 0 is always =>",Boolean(0),"<br/>",
+        "6)Empty strings are always =>",Boolean(""),
+        "<br/>","7) Undefined values are =>",Boolean(x),
+        "<br/>","8) Null is =>",Boolean(y), "<br/>",
+        "9) False is =>", Boolean(z), "<br/>",
+        "10) Nan is => ", Boolean(a));
+    </script>
+
+       <h2>4) Boolean object</h2>
+       <script>
+        const c = Boolean(false);
+        const d = new Boolean(false);
+        const e = new Boolean(false);
+
+
+        document.write("1) Type of normal boolean =>",typeof(c),"<br/>","2) Type of object boolean =>",typeof(d));
+
+        document.write("<br/>","3) comparing ==",c == d)
+        document.write("<br/>","4) comparing with data type", c === d)
+
+        document.write("<br/>", "5) Comparing two objects =>","<br/>", (d == e),"<br/>", (d === e))
+       </script>
+
+       <p style="color: red"> <b>Note:-</b> If we compare two objects will return the false</p>
+</body>
+</html>

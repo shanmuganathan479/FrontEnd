@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Errors</h1>
+    <li>try => code block</li>
+    <li>catch() => capture error if happen in try</li>
+    <li>finally => finally will execute whatever happens</li>
+    <li>throw => used to throw custom error</li>
+
+    <h2>1)try</h2>
+    <script>
+        try {
+            function name(n){
+           return `name is ${n}`
+        }
+
+        document.write(name("shan"))
+            
+        } catch (error) {
+            document.write(error)
+        }
+    </script>
+
+     <h2>2)catch</h2>
+    <script>
+        try {
+            function age(n){
+           return `age is ${n}`
+        }
+
+        document.write(ageee(22))
+            
+        } catch (error) {
+            document.write(error)
+        }
+    </script>
+
+    <p style="color: red;">Note :- try & catch comes with pairs only</p>
+
+    <h2>3) throw & finally</h2>
+    <p>used to throw the custom error</p>
+
+    <input type="text" id="inp"> 
+    <button id="but" onclick="checkVal()">check</button>
+    <p id="ans"></p>
+
+    <script>
+        function checkVal(){
+            let v = document.getElementById('inp').value;          
+          const out = document.getElementById('ans');
+
+          out.innerHTML= v;
+ 
+          try {
+            if(v.trim() == "") throw "empty"
+            if(v > 10) throw "big"
+            if(v < 5) throw "small" 
+          } 
+          catch (error) {
+          out.innerHTML= "Value is=>"+ error;     
+          }
+
+          finally{
+            document.getElementById('inp').value = ""
+
+          }
+                 
+        }
+
+    </script>
+    <ul style="color: red;">
+        <li>try is used to do the validate i am using throw for custom error</li>
+        <li>throw => will throw the custom error</li>
+        <li> catch is used to catch my custom error</li>
+        <li>finally used to clear the input field (Whatever happes it always runs)</li>
+    </ul>
+    
+    <h2>4) Error </h2>
+    <p>js has some built in message</p>
+    <p>structure => name : message</p>
+      <h3>1)referemce error</h3>
+      <script>
+        try {
+            let x = 1
+            let z = x + y;
+            document.write(z)
+            
+        } catch (error) {
+            document.write(error)
+        }
+      </script>
+
+      <h3>2) range error</h3>
+      <script>
+        try {
+            let x = 1;
+            let v = x.toPrecision(500)
+            
+        } catch (error) {
+            document.write(error)
+            
+        }
+      </script>
+
+      <h3>3) type error</h3>
+      <script>
+        try {
+            let a = 10;
+            let b = a.toUppercase();
+            document.write(b)
+
+            
+        } catch (error) {
+            document.write(error)
+            
+        }
+      </script>
+
+      <h3>4) syntax error()</h3>
+      <script>
+        try {
+            eval("alert('Hello)"); 
+            
+        } catch (error) {
+            document.write(error)
+            
+        }
+      </script>
+       
+       <h3>5) URI error</h3>
+   <script>
+    try {
+      decodeURI("%%%");
+    }
+    catch(err) {
+      document.getElementById("demo").innerHTML = err.name;
+    }
+    </script>
+
+    
+
+    
+</body>
+</html>

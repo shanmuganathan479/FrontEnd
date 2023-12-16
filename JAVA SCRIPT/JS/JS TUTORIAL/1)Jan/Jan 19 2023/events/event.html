@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EVENTS</h1>
+    <p>if we perform some actions on webpage that is called event</p>
+    <ul> Some events
+    <li>click</li>
+    <li>type</li>
+    <li>mouse over/out</li>
+    <li>key press</li>
+</ul>
+    <button onclick="handleTime()">Do want time</button>
+    <p id="tym"></p>
+    <script>
+        function handleTime()
+        {
+          document.getElementById('tym').innerHTML = Date()
+        }
+    </script>
+    <ul>
+        <li>Onclick</li>
+        <li>onChange</li>
+        <li>onMouseover</li>
+        <li>oneKeydown</li>
+        <li>onload</li>
+        <li>onMouseout</li>
+    </ul>
+
+</body>
+</html>

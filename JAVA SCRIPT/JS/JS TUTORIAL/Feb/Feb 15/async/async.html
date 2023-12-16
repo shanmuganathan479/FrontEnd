@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <p style="color: red;">Async make function to return promise</p>
+    <p style="color: red;">await makes function to wait for promise</p>
+
+    <h2>1) SYNTAX</h2>
+    <p>async function myfunc(){
+    }
+    </p>
+
+    <h2>2) EXAMPLE</h2>
+    <h2 id="demo"></h2>
+    <script>
+      function Display(value){
+        document.getElementById("demo").innerHTML = value;
+      }
+
+      async function myFunc(){
+        return "This is async function"
+      }
+
+      myFunc().then(
+        function(value) {Display(value);},
+        function(error) {Display(error);},
+      );
+    </script>
+
+    <h2>3) await</h2>
+    <p style="color: red">await can be used in inside the function</p>
+    <p style="color: red">await makes the function pause wait for promise</p>
+    <h3>SYNTAX</h3>
+    <p>let value = new promise</p>
+
+    <h2>4) EXAMPLE</h2>
+    <h2 id="ans2"></h2>
+    <script>
+
+        async function shan(){
+           let v = new Promise( function(resolve,reject){
+              resolve("THIS IS MESSAGE")
+           }
+           )
+        document.getElementById("ans2").innerHTML = await v;
+    }
+        shan();
+
+    </script>
+
+    <h2>5) Waiting for timeout</h2>
+    <h2 id="ans3"></h2>
+    
+    <script>
+        async function handleTime(){
+            let va = new Promise( function(resolve){
+                setTimeout(function(){resolve("HEY LOOK ME")},3000)
+            }
+            )
+         document.getElementById("ans3").innerHTML = await va;
+        }
+
+        handleTime();
+    </script>
+    
+    
+    
+</body>
+</html>

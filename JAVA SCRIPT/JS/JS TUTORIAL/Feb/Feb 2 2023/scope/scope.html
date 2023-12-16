@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope</h1>
+    <p>Accessablity of variables </p>
+    <li>Block scope</li>
+    <li>Function scope</li>
+    <li>Global scope</li>
+
+    <h2>1) Block scope</h2>
+    <p> <span style="color: red;">let const </span>
+        create block scope {} we can't access in outside the blok</p>
+    <script>
+        {
+            let a = 1;
+            var b = 2;
+        }
+        document.write("cant access here",a) // cant access here
+    </script>
+     
+     <h2>2) Local scope()</h2>
+     <p>variable inside the function</p>
+     <script>
+        function shan(){
+            let name = "stark";
+            // access only inbetween function
+            return name;
+        }
+        document.write(shan())
+     </script>
+
+     <h2>3) Function scope()</h2>
+     <p>Each function creates the function scope</p>
+     <p>var,let,const all are create function scope()</p>
+     <script>
+        function type1(){
+            var v1= 5 
+            return v1  
+        }
+        function type2(){
+            let v2= 6
+            return v2
+        }
+        function type3(){
+            const v3= 7
+            return v3
+        }
+
+        document.write(type1(),type2(),type3())
+     </script>
+
+     <h2>4) Global scope</h2>
+     <p> variable declared outside the function creates a Global scope</p>
+     <script>
+        var age = 22;
+        function ggg(){
+            return age;
+
+        }
+        document.write("age=>",age,"<br/>","throgh function=>",ggg())
+     </script>
+
+     <h2>5) Automatic global</h2>
+     <p>if we dont mention variable it become global variable</p>
+     <script>
+        tes();
+        document.write("I can access top=>",lap)
+        function tes (){
+            lap = "Dell";
+        }
+     </script>
+     
+     <h2>6) Strict mode</h2>
+     <p> Undeclared variables not automatically global</p>
+    
+     <h2>7) Global Variables in HTML</h2>
+     <script>
+        var shan = "stark";
+        document.write("With var i can access through window=>",window.shan)
+     </script>
+      <script>
+        let sha = "stark";
+        document.write("<br/>","With let i cant access through window=>",window.sha)
+     </script>
+
+     <h2>8) Lifetime of variable</h2>
+     <ol style="color: red;">
+        <li>js variable lyf tym starts when its declared</li>
+        <li>function variable (let) deleted when function has overed</li>
+        <li>global variable deleted when we close the browser</li>
+     </ol>
+</body>
+</html>

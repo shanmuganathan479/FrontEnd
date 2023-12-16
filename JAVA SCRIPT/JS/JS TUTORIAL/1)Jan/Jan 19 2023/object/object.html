@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <p>objects are variables too... that contain may values in the form key and values(separated by : )</p>
+    <script>
+        const frogLures={
+            Drave: "poke frog",
+            Bassart: "jump frog",
+            LuresFactory: "drop frog",
+            Lucana: "samba"
+        }
+        document.write(frogLures.Bassart)
+    </script>
+    <h1>this</h1>
+    <p>this refers to object based on where we are using</p>
+    <h2 id="ans2"></h2>
+    <script>
+         const lures={
+            Drave: "poke frog",
+            Bassart: "jump frog",
+            LuresFactory: "drop frog",
+            Lucana: "samba",
+            bestFrogs: function()
+            {
+               return this.Drave+this.Bassart
+            }
+        }
+        document.getElementById('ans2').innerHTML = (lures.bestFrogs())
+    </script>
+</script>
+</body>
+</html>

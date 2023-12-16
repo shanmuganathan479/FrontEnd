@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For In </h1>
+    <p>used to properties  of an object</p>
+     <h2>1) Objects</h2>
+    <script>
+        let laptop ={
+            name : "Dell",
+            model : "Latitude 7390",
+            Os : "ubuntu",
+        }
+
+        for(let x in laptop)
+        {
+            document.write(laptop[x],"<br/>")
+
+        }
+    </script>
+    <li>x is key</li>
+    <li>laptop[x] => values</li>
+    <li>iterating with reference of keys</li>
+
+    <h2>2) Arrays[]</h2>
+    <script>
+        let laptops = ["mac","dell","hp","lenovo"]
+
+        for (let x in laptops)
+        {
+            document.write(laptops[x],"<br/>")
+
+        }
+    </script>
+
+     <h3>Note :-</h3>
+    <ol style="color: red;"> 
+    <li>dont use for in for Array</li>
+    <li>better to use forof (), forEach(), for()</li>
+    <li>Array index may not access with order</li></ol>
+    
+</body>
+</html>

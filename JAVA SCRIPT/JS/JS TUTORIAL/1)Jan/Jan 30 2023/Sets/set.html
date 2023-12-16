@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Set()</h1>
+    <p> Collection of unique values </p>
+    <p>Each value occur only once in a set</p>
+
+    <h2>1) Create  a new set()</h2>
+    <script>
+        const name = new Set(["s","h","a","n"])
+
+    </script>
+
+    <h2>2) get size of set()</h2>
+    <script>
+         document.write(name.size)
+    </script>
+   
+    <h2>3) add values to set</h2>
+    <script>
+        name.add("j")
+        document.write(name.size)
+    </script>
+
+    <h2>4) forEach()</h2>
+    <script>
+        name.forEach(element => {   
+            document.write(element)
+        });
+    </script>
+
+
+    <h2>5) values() => return new iterator containing all values</h2>
+    <script>
+        document.write(name.values())
+    </script>
+
+    <h2>6) access through for of()</h2>
+    <script>
+
+        for(let v of name.values()){
+            document.write(v)
+
+        }
+
+    </script>
+
+
+
+    
+</body>
+</html>

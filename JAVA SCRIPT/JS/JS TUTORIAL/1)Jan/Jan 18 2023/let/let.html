@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>let</h1>
+    <ul>
+        <li>introduced in es6</li>
+        <li>we cant redeclare with in {cant redeclare} another{can declare}</li>
+        <li>must declare before use let x=5;</li>
+        <li>defined with block scope {}</li>
+    </ul>
+
+    <script>
+        {
+            let x = 100;
+            // let x = 10;
+            // Not allowes
+        }
+        {
+            let x = 101;
+             x=22;
+            // Allowed
+        }
+        {
+            a=10;
+            var a;
+            // Allowed
+            document.write(a)
+        }
+        {
+            d = 33;
+            let d;
+            document.write(d)
+          // not hoisted
+        }
+    </script>
+    <h2>hoisted is allowed</h2>
+    <ul>
+        <li>intialize </li>
+        <li>print</li>
+        <li>variable declaration</li>
+    </ul>
+    
+</body>
+</html>

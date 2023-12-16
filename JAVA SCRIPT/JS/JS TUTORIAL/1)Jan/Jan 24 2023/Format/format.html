@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date format</h1>
+
+    <h2>1) ISO date()</h2>
+    <script>
+        const d = new Date("2000-03-27")
+        document.write(d)
+    </script>
+    
+    <h2>2) short date()</h2>
+    <script>
+        const d1 = new Date("03/27/2000")
+        document.write(d1)
+    </script>
+
+    <h2>3) long date()</h2>
+    <script>
+        const d2 = new Date("March 27 2022")
+        document.write(d2)
+    </script>
+
+    <h2>4) parsing date() converts to milli seconds</h2>
+    <script>
+        const d3 =  Date .parse("May 18 2000")
+        
+        document.write(d3)
+    </script>
+</body>
+</html>

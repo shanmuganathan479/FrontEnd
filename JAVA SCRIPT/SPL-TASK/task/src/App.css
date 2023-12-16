@@ -1,0 +1,32 @@
+table , tr ,td,th
+{
+    border-collapse: collapse;
+}
+
+th{
+    background-color: purple;
+    color:whitesmoke;
+    
+}
+td{
+    background-color:bisque;
+    
+    
+}
+td:hover {background-color:aqua;}
+
+.HD
+{
+    margin-left:600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.class1
+{
+    margin-left:60px;
+}
+
+tr{
+    background-color:violet;
+  
+    
+}

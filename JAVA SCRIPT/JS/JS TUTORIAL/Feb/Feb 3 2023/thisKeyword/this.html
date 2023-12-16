@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this keyword</h1>
+    <p>this is the keyword it referes to the object based on where we are this</p>
+
+    <ol>Usage
+        <li>In object it refers to current object</li>
+        <li>In alone it refers to the global object</li>
+        <li>In function it refers the global object</li>
+        <li>In a function with strict mode this is undefined</li>
+        <li>In event , this referes the the event</li>
+        <li>In methods it refers any object</li>
+        <li>general strict mode it refers glbal onject</li>
+    </ol>
+    
+    <h2>1) Current object</h2>
+    <p>here, it refers to the current object</p>
+
+    <script>
+        const names= {
+            firstName: "shan",
+            lastName: "Stark",
+            fullName : function(){
+                return this.firstName +""+this.lastName
+            }
+        }
+        document.write(names.fullName())
+    </script>
+     
+     <h2>2) Alone</h2>
+     <p>window is a global object</p>
+     <script>
+        let a = this;
+        document.write("global object =>", a)
+     </script>
+
+     <h3>In strict mode also refers the global object</h3>
+     <script>
+        "use strict"
+        let c = this;
+        document.write(c)
+     </script>
+
+     <h2>3) this in function()</h2>
+     <p> refers global object</p>
+     <script>
+        function add(){
+            return this;
+        }
+         document.write(add())
+     </script>
+
+     <h3>with strict mode</h3>
+     <p>in a function with strict mode it is undefined</p>
+     <script>
+        "use strict"
+        function minus(){
+            return this;
+        }
+        document.write(minus())
+     </script>
+
+     <h2>4) Event</h2>
+     <p>refers this event</p>
+
+     <button onclick="this.style.color='blue'">click me to change</button>
+
+     <h2>5) Object binding</h2>
+     <script>
+        const price = {
+            lap: 1000,
+            mobile: 2000,
+            total : function (){
+                return this
+            }
+        }
+        document.write(price)
+     </script>
+
+     <h2>6) Explicit function binding()</h2>
+     <script>
+        const iphone ={
+            os: "ios",
+            store: "Appstore",
+            camera: function(){
+                return this.censor + "" + this.series
+            }
+          
+        }
+        const sony ={
+            censor: "IMX",
+            series: 986
+
+        }
+
+        let ans = iphone.camera.call(sony)
+        document.write(ans)   // we can call without()
+     </script>
+     <p> we can call without()</p>
+
+
+     <h2>7) function borrowing</h2>
+     <p>use bind() and call like a function ()</p>
+
+     <h2>8) precedence</h2>
+     <ol>
+        <li>1) bind()</li>
+        <li>2) apply()</li>
+        <li>3) call()</li>
+        <li>4) method()</li>
+        <li>5) function in global scope()</li>
+     </ol>
+
+    
+</body>
+</html>

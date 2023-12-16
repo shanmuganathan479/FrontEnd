@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Search Methods</h1>
+    <li>String indexOf()</li>
+    <li>String lastIndexOf()</li>
+    <li>String search()</li>
+    <li>String match()</li>
+    <li> String matchAll()</li>
+    <li> String includes()</li>
+    <li>String startsWith()</li>
+    <li> String endsWith()</li>
+    <h2>indexOf()</h2>
+    <p>returs index position</p>
+    <script>
+        let a = "This is shan from vkd";
+        document.write(a.indexOf("shan"))
+    </script>
+    <h2>lastIndexOf()</h2>
+    <p>use to return index position from the end</p>
+    <script>
+        let b = "shan This is shan from vkd";
+       document.write(b.lastIndexOf("shan"))
+    </script>
+    <h2>search()</h2>
+    <p>used to return the position </p>
+    <script>
+        let c = "This is stark";
+        document.write(c.search("stark"))
+    </script>
+    <h2>match()</h2>
+    <script>
+        let d = "shan is called shana Shanmugam shanmuganthan";
+        let d1= d.match("shan")
+        document.write(d1.length + ""+d1);
+    </script>
+    <h2>match() with global</h2>
+    <li>//</li>
+    <li>//g  => global</li>
+    <li>//gi => global case sensitive</li>
+    <script>
+        let e = "shan is called shana Shanmugam shanmuganthan";
+        let e1 = e.match(/shan/gi)
+        document.write(e1.length + "" + e1)
+    </script>
+    <h2>matchAll()</h2>
+    <p id="fans"></p>
+    <script>
+        let f = "shan is called shana Shanmugam shanmuganthan";
+        let f1 = f.matchAll(/shan/g);
+        let f2 = f.matchAll(/shan/gi);  //case sensitive
+
+        document.getElementById('fans').innerHTML = 
+        Array.from(f1);  
+    </script>
+    <h2>includes(values,position)</h2>
+    <script>
+        let g = "shan vkd"
+        document.write(g.includes("vkd",5))
+    </script>
+    <h2>startsWith(values, "position")</h2>
+    <script>
+        let h = "shan vkd"
+        document.write(h.startsWith("shan",0))
+    </script>
+    <h2>endsWith(values, "position")</h2>
+    <script>
+        let i = "shan vkd"
+        document.write(i.endsWith("d",8))
+    </script>
+
+</body>
+</html>

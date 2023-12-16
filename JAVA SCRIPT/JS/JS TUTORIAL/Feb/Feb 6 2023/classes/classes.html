@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classes()</h1>
+    <p>classes are templates for js objects
+    </p>
+    <script>
+        class data{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        const myData = new data("hemmu",22);
+        document.write(myData.name,"<br/>",myData.age);
+
+    </script>
+
+    <h2>1) constructor()</h2>
+    <ol>constructoris a special method
+        <li>it has exact name constructor</li>
+        <li>automatically executed when object is created</li>
+        <li>used to intiallize oject properties</li>
+        <li>if u don't define constructor it take empty constructor </li>
+    </ol>
+
+    <h2>2) methods</h2>
+    <script>
+        class data1{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            date(){
+
+                let d = new Date();
+                return d.getDay();
+            }
+        }
+
+        const myData1 = new data1("stark",22);
+        document.write(myData1.name,"<br/>",myData1.age, "<br/>",myData1.date());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Const</h1>
+    <ul>
+        <li>introduced in es6</li>
+        <li>cant be redeclare</li>
+        <li>cant be reassign</li>
+        <li>defined in block scope</li>
+    </ul>
+    <h2>ReAssign</h2>
+    <p id="issues"></p>
+    <script>
+        try {
+            const name = "shan";
+            name = "stark"
+            
+        } catch (error) {
+            document.getElementById('issues').innerHTML = error
+            
+        }
+    </script>
+
+    <h2>Assigned</h2>
+    <script>
+        {
+            // age = 22;
+            // const age;   incorrect way
+
+            const age = 22; 
+            //correct way
+        }
+    </script>
+
+    <h2>Usage</h2>
+    <ul> Always declare if the value is not gonna change 
+        <li>Array</li>
+        <li>Object</li>
+        <li>Function</li>
+        <li>RegExp</li>
+    </ul>
+    <h2>Block scope same like let {} </h2>
+    <h2>hoisted is allowed</h2>
+    <ul>
+        <li>intialize </li>
+        <li>print</li>
+        <li>variable declaration</li>
+    </ul>
+</body>
+</html>

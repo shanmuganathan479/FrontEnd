@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call back</h1>
+    <p style="color: red
+    ;"> callback function is an argument it is passed to another function to call . it will run after one function finished</p>
+
+    <h2>1)Function sequence</h2>
+     <p id="ans"></p>
+   <script>
+    const final =(ans)=>{
+        document.getElementById('ans').innerHTML = ans;
+    }
+
+    const one =()=>{
+        final("This is function 1")
+    }
+    const two =()=>{
+        final("This is function 2")
+    }
+
+    one();
+    two();
+   </script>
+
+   <p style="color: red">Note:-  it is executed in the sequence how they are called</p>
+
+   <h2>2) Sequence control</h2>
+   <script>
+    const display=(answer)=>{
+        document.write("Sum of the value is =>",answer)
+    }
+    
+    const addCalculator=(arg1,arg2)=>{
+
+       let sum = arg1 + arg2;
+
+       display(sum)
+     
+    }
+
+    addCalculator(33,48,);
+   </script>
+
+   <h2> 3)JS Callback</h2>
+   <script>
+      const display1=(ans1)=>{
+        document.write("The answer is =>",ans1)
+      }
+
+      const add=(v1,v2,callback)=>{
+          
+        let sum = v1 + v2;
+
+        callback(sum)
+      }
+
+      add(33,48,display1)
+    //   add(33,48,display1())   should not use()
+
+   </script>
+
+   <h2>4) Usage</h2>
+   <p>In asynchronous function one function has to wait for another function</p>
+
+
+</body>
+</html>

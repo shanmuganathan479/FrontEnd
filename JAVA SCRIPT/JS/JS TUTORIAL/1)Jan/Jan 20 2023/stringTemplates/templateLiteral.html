@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Template literals ``</h1>
+     
+    <p style="color: red;">Note:Internet explored does not support </p>
+
+    <h2>Back-tics syntac</h2>
+    <script>
+        let name = `shan`
+        document.write(name)
+    </script>
+    
+    <h2>Quotes inside the string`'' ""`</h2>
+    <script>
+        let aboutMe = `This is "shan" from 'vkd'`
+        document.write(aboutMe)
+    </script>
+     
+     <h2>Multiline strings</h2>
+     <script>
+        let lines = `this is
+        shan from 
+        vkd`
+        document.write(lines)
+     </script>
+
+     <h2>Interpolation</h2>
+     <p>ec to interpolate variable into strings </p>
+     <p>${....}</p>
+
+     <h2>Variable substitution </h2>
+     <script>
+        let fname = "shan";
+        let lname = "stark";
+        document.write(`full name is ${fname},${lname}`)
+     </script>
+
+     <h2>Expression substitution</h2>
+     <script>
+        let a = 1;
+        let b = 8
+        document.write(`${(a+b)}`)
+     </script>
+
+     <h2>HTML templates</h2>
+     <script>
+        let shan = "devoloper";
+        document.write(`<li>${shan} </li>`)
+     </script>
+
+     
+
+</body>
+</html>

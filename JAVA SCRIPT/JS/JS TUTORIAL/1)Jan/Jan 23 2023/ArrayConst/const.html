@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array const</h1>
+    
+    <p>this the e6 feature it become more common to declare</p>
+     <ol>
+    <li>can't reassign</li>
+    <li>can re arrange</li>
+    <li>assign when decalre</li>
+    <li>const block scope {inside the block we can redeclare}</li>
+    <li>redeclaring with var to const not aloowed</li>
+</ol>
+    <script>
+        const lap = ["hp","dell"]
+        
+        // lap = ["shan"]     1)can't reassign 
+
+        lap [2] = "mac"     // 2)can re arrange
+        
+        // const bike;        3) assign when declare
+
+        // const lap = ["vaio"]   4) can't redcalre
+
+        {
+            const lap = ["vaio"];
+            document.write(lap,"<br/>")    // inside the {} we can redeclare
+
+            var os = ["ubuntu"]
+            document.write(os,"<br/>")
+
+            // const os = ["linux"]   5) can't declare var to const
+
+        }
+
+        document.write(lap)
+
+    </script>
+
+    
+</body>
+</html>

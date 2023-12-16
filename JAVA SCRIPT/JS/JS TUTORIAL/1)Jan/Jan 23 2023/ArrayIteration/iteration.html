@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array iteration</h1>
+    <h2>1) for Each()</h2>
+    <p>Here we are using forEach() it takes 3 args
+        <li>value</li>
+        <li>index</li>
+        <li>array itself</li>
+
+    </p>
+    <p id="ans"></p>
+    <script>
+      var lap = [11,22,33,44,88]
+      let temp = "";
+      lap.forEach(myFunction)  
+      document.getElementById('ans').innerHTML = temp;
+
+      function myFunction(value,index,array){
+        temp += value + "<br/>";
+      }  
+    </script>
+
+
+    <h2>2) map()</h2>
+    <p>map creates new Array [] by perfoming action</p>
+    <p>it does not change original value</p>
+    <script>
+
+        lap2 = lap.map(myFunction2)
+        document.write(lap2)
+        function myFunction2(value){
+           
+            return value*2 
+        }
+
+    </script>
+
+    <h2>3) filter()</h2>
+    <p>creates new array[]</p>
+
+    <script>
+        var members = [11,16,18,22,23,30,34,39,44,60,39,77]
+        let minors = members.filter(findMinor)
+        document.write(minors)
+
+        function findMinor(value){
+            
+            return value < 18;
+        }
+    </script>
+
+    <h2>4) reduce()</h2>
+    <p>used to converts array into single value</p>
+    <p>work flow is left to right argumets(intialvalue,value)</p>
+    <p>does not redue original array</p>
+     <script>
+        let op = members.reduce(doReduce)
+        document.write(op)
+         function doReduce(total,value,)
+         {
+            return total+value;
+
+         } 
+     </script>
+
+     <h2>5)reduceRight()</h2>
+     <p>same like reduce() work flow is right to left</p>
+       
+     <h2>6)every()</h2>
+     <p>checks each elemnt passed the test</p>
+     <script>
+        let check = members.every(doCheck)
+        document.write(check)
+
+        function doCheck(value)
+        {
+           return value < 60
+        }
+     </script>
+        
+      <h2>7)some()</h2>
+      <p>it checks some elemnt passed to test</p>
+      <script>
+        let sm = members.some(doSome)
+        document.write(sm)
+          
+        function doSome(value){
+          
+            return value > 35;
+        }
+
+      </script>
+
+      <h2>8)indexOf()</h2>
+      <p>returns index position of the element</p>
+      <script>
+        let pos = members.indexOf(39)
+        document.write("The index position is =>","\t",pos)
+      </script>
+       
+       <h2>9)lastindexOf()</h2>
+       <p>returns index position of the element from last</p>
+       <script>
+         let la = members.lastIndexOf(39)
+         document.write("The index position is =>","\t",la)
+       </script>
+       
+
+       <h2>10) find()</h2>
+       <p>it returns first array passed the test</p>
+
+       <script>
+        let check1 = members.find(doCheck)
+        document.write("First finded values is=>",check1)
+
+        function doCheck(value)
+        {
+           return value < 60
+        }
+
+       </script>
+
+       <h2>11) findIndex()</h2>
+       <p>it returns first array passed the test</p>
+
+       <script>
+        let check2 = members.findIndex(doCheck)
+        document.write("First finded values index is=>",check2)
+
+        function doCheck(value)
+        {
+           return value < 60
+        }
+
+       </script>
+
+       <h2>12)Array.from()</h2>
+       <p>return array from any object es6 feature</p>
+       <script>
+
+        let vl = Array.from("shanmuganathan")
+
+        document.write(vl)
+       </script>
+       
+
+       <h2>13) keys()</h2>
+       <p>returns keys</p>
+       <script>
+        var laps = ["hp","lenovo","dell","mac"]
+        let keys = laps.keys()
+        var temp1 = "";
+        for (let x of keys) {
+            temp1 += x +"<br/>"
+            document.write(x,"<br/>")
+        }
+        // document.write(temp1)
+       </script>
+        
+        <h2>14) entries()</h2>
+       <p>returns keys + values</p>
+       <script>
+        let entries = laps.entries()
+
+        for (let y of entries) {
+            document.write(y,"<br/>")
+        } 
+       </script>
+
+       <h2>includes ()</h2>
+       <script>
+        let shan = laps.includes("dell");
+        document.write(shan)
+       </script>
+
+
+
+
+</body>
+</html>

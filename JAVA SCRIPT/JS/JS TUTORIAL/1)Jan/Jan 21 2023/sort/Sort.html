@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sorting</h1>
+    <h2>1) sort()</h2>
+    <script>
+        var srt = [100,500,300,200,100,50,25,1]
+        var con = srt.sort();
+        document.write(srt,"\t","after sorting","\t",con)
+    </script>
+    
+    <h2>2) reverse()</h2>
+    <script>
+        document.write(srt,"\t")
+        document.write("After reverse",srt.reverse())
+    </script>
+     
+     <h2>3)Using min()</h2>
+     <script>
+        document.write(findMin(srt))
+        function findMin(arr){
+           return Math.min.apply(null,arr)
+        }
+     </script>
+
+     <h2>3)Using max()</h2>
+     <script>
+        document.write(findmax(srt))
+        function findmax(arr){
+           return Math.max.apply(null,arr)
+        }
+     </script>
+    
+</body>
+</html>

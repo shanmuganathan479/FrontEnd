@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <p>Array is the special variable to store lot of values in one variable</p>
+    <script>
+        let shan = ["hesha","stark","hemmu"];
+        document.write(shan[2])
+    </script>
+
+    <h2>Using keyword</h2>
+    <script>
+        let name = new Array("shan","stark")
+        document.write(name,"\t",)
+    </script>
+
+    <p style="color: red;">Note:-By using index values we can access array</p>
+
+    <h2>Arrays are special type of objects</h2>
+    <p>we can access through index value</p>
+    <script>
+        let lap = ["hp","lenovo","dell"]
+        document.write("Array type is =>",typeof(lap))
+    </script>
+    
+    <p>Array are special if we decalre indivially we can store different type</p>
+    <li>Function()</li>
+    <li>Object()</li>
+    <li>Array[]</li>
+    <li>methods like Date</li>
+
+    <h2>Accesing Elements</h2>
+    <script>
+        let bikes = ["fz","R15","mt15","fz25","fzx"]
+        document.write("first element=>",bikes[0],"\t","last element =>",bikes[bikes.length -1])
+    </script>
+
+    <h2>Looping array[]</h2>
+    <h3>forLoop()</h3>
+    <script>
+        var yamaha = ["fz","R15","mt15","fz25","fzx"]
+
+        for(let y = 0; y < yamaha.length ; y++)
+        {
+          document.write(yamaha[y],"\t")
+        }
+
+    </script>
+
+    <h3>forEach()</h3>
+    <script>
+       yamaha.forEach((value)=>
+       {
+         document.write(value,"\t")
+       })
+    </script>
+
+         <h2>Adding array elements</h2>
+         <script>
+            document.write(yamaha,"\t",)
+            yamaha.push("XSR 155")
+            document.write("After adding",yamaha)
+         </script>
+         
+         <h2>Associate array => JS not suppoted ,(named index) </h2>
+         <p>only number index named index are not allowed</p>
+         <script>
+            let Associate = [0] ;
+            Associate[0] = "shan";
+            Associate[1] = "shan";
+            Associate[2] = "shan";
+            Associate[3] = "shan";
+            document.write(Associate)
+         </script>
+
+         <h2>Difference b/w array and object</h2>
+         <p style="color: red;">Array are numbered index</p>
+         <p style="color: red;">Objects are named indexes</p>
+         <ul>When to use Array and object
+            <li>Array => name as number[0,1,2] we can use </li>
+            <li>Object => name as name{"fname","lname"} </li>
+         </ul>
+
+         <h2>newArray() vs []</h2>
+         <p id="ans"></p>
+         <script>
+            let x = [3348];
+            var newAproblems = new Array(3348);
+            document.write(x);
+            document.getElementById('ans').innerHTML = newAproblems; 
+         </script>
+         <p style="color: red;">Always prefer []</p>
+           
+
+         <h2>How to find array becoz this returns object</h2>
+         <li>isArray()</li>
+         <li>instanceOf</li>
+         <script>
+            document.write(Array.isArray(yamaha))
+         </script>
+
+</body>
+</html>

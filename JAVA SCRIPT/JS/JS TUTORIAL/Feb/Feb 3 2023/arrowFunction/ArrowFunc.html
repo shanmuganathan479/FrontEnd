@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow function()</h1>
+    <p>introduced es6 version</p>
+    <p>we can write shorter syntax</p>
+
+    <h2>1)Normal function()</h2>
+    <script>
+        function shan(name){
+           return `<h2>${name} <h2/>`
+        }
+
+        document.write(shan("stark"))
+    </script>
+
+    <h2>2) Arrow function()</h2>
+    <script>
+        const name =(n,age)=> {
+            return n + "<br/>" + age
+        }
+        document.write("shan",22)
+    </script>
+    
+    <h2>3) without()</h2>
+    <script>
+        const add = val => val+2
+        document.write(add(8))
+    </script>
+
+    
+</body>
+</html>

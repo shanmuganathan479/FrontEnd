@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hoisting</h1>
+    <p>moving declarations to the top</p>
+    <h2>1)JS DECLARATIONS ARE HOISTED</h2>
+    
+    <h3>Example 1</h3>
+    <script>
+        var x;
+        x = 100;
+        document.write(x)
+        
+     </script>
+
+    <h3>Example 2</h3>
+
+    <script>
+       x = 100;
+       document.write(x)
+       var x;
+    </script>
+
+
+    <p style="color: red;">Note :- it moves all declarations to the top</p>
+
+    <h2>2) With let</h2>
+    <p>it wont work</p>
+    <script>
+        x = 100;
+        document.write(x)
+        let x;
+     </script>
+
+     <h2>3) With const</h2>
+    <p>it wont work</p>
+    <script>
+        x = 100;
+        document.write(x)
+        //const x;
+     </script>
+
+     <h2>2)JS INTIALIZATIONS ARE NOT HOISTED</h2>
+     <h3>1)Normal intialazation</h3>
+     <script>
+        {
+        let x = "shan"
+        document.write(x)
+        }
+       
+     </script>
+
+     <h3>2)Not hoisted example</h3>
+     <script>
+        document.write(stark);
+        var stark = "shan";
+     </script>
+
+    <h2 style="color: red;">Note :- Always intialize in top</h2>
+
+    
+    
+</body>
+</html>

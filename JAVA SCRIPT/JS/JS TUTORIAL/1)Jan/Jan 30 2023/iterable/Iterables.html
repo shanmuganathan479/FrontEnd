@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iterables</h1>
+    <p>iterables are iterable object lie Array[]</p>
+    <p style="color: red;">we mostly use for() of for iterable objects</p> 
+
+    <h2>1) iterate over string ""</h2>
+    <script>
+        const name = "shanmuganathan";
+
+        for(let n of name){
+            document.write(n)
+        }
+    </script>
+
+    <h2>2) iterate over Array[]</h2>
+
+    <script>
+        let bab = ["h","e","m","m","u"];
+
+        for (let b of bab){
+            document.write(b)
+        }
+    </script>
+    
+    <h2>3) iterate over set</h2>
+    <script>
+    const coup = new Set (["s","h","a","n"]);
+     
+    for (let c of coup){
+        document.write(c)
+    }
+    </script>
+
+    <h2>4) iterate over map</h2>
+    <script>
+        const data = new Map([
+            ["fname",1233],
+            ["lname",887],
+            ["age",22],
+            ["native",778989]
+        ])
+          
+        for (let d of data){
+            document.write(d,"<br/>")
+        }
+    </script>
+    
+</body>
+</html>

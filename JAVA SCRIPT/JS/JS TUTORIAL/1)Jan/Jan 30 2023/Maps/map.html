@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maps()</h1>
+    <p>key and pair combination key can be any data type</p>
+
+    <h2>1) create map</h2>
+    <script>
+        const data = new Map([
+            ["shanAge",22],
+            ["hemmuAge",23],
+            ["rytAge",3],
+        ])
+        document.write(data.get("shanAge"))
+    </script>
+
+    <h2>2) set </h2>
+    <script>
+        data.set("heshaAge",0)
+        document.write(data.get("heshaAge"))
+    </script>
+
+    <h2>size => property</h2>
+    <script>
+        document.write(data.size)
+    </script>
+    
+    <h2>3) delete</h2>
+    <script>
+        document.write(data.delete("rytAge"),data.size)
+    </script>
+
+    <h2>4) has()</h2>
+    <script>
+        document.write(data.has(("rytAge")))
+    </script>
+    
+    <h2>5)forEach()</h2>
+    <script>
+        data.forEach((value,key)=>{
+            document.write(key+value,"<br/>")
+        })
+    </script>
+    
+</body>
+</html>

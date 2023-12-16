@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+
+    <h2>1) toString()</h2>
+    <p>convert array to string</p>
+    <script>
+      var yamaha = ["fz","R15","mt15","fz25","fzx"];
+      let con = yamaha.toString();
+      document.write(con,"\t", "type =>", typeof(con))
+    </script>
+     
+     <h2>2) join()</h2>
+     <p>same like string we can pass separator values also</p>
+    <script>
+        document.write(yamaha.join("+"))
+    </script>
+     
+     <h2>3) pop()</h2>
+     <p>Removes element from last</p>
+     <script>
+        document.write(yamaha.pop());
+        document.write("\t","after pop=>",yamaha)
+     </script>
+
+      <h2>4) push()</h2>
+     <p>add element to atlast</p>
+     <script>
+        document.write(yamaha.push("fazer"))
+        document.write("\t","after push=>",yamaha)
+     </script>
+
+     <h2>5) shift()</h2>
+     <p>remove first element</p>
+     <script>
+        document.write("shift","\t",yamaha.shift())
+        document.write("\t","after shift=>",yamaha)
+     </script>
+
+    <h2>6) unShift()</h2>
+     <p>add first element</p>
+     <script>
+        document.write("shift","\t",yamaha.unshift("rx100"))
+        document.write("\t","after unshift=>",yamaha)
+     </script>
+
+     <h2>7) changing elements yamaha[3]</h2>
+     <script>
+        yamaha [2]= "RD350"
+        document.write(yamaha)
+     </script>
+
+     <h2>8) concat()</h2>
+     <p>merge 2 array</p>
+     <script>
+        let yamahaSuperBikes = ["R3","R7","R1"]
+        let total = yamaha.concat(yamahaSuperBikes)
+        document.write(total)
+     </script>
+
+     <h2>9) splice()</h2>
+     <p>add element to array</p>
+     <script>
+        total.splice(2,3,"MT-01","MT-07")
+        document.write(total)
+     </script>
+      <p>also remove element to array</p>
+      <script>
+         total.splice(2,3)
+         document.write(total)
+      </script>
+
+      <h2>10) slice()</h2>
+      <p>used to slice from start to end</p>
+     <script>
+        document.write(total)
+        document.write("gonna slice","\t",total.slice(1,3))
+     </script>
+      <h2>11) automatic toString()</h2>
+      <p style="color: red;"> All js objects defaultly have toString() method</p>
+
+      
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data type</h1>
+    <li>String</li>
+    <li>Number</li>
+    <li>Boolean</li>
+    <li>BigInt</li>
+    <li>Object</li>
+    <li>Null</li>
+    <li>Undefined</li>
+    <li>Symbol</li>
+   
+    <h1>Object data type</h1>
+    <li>An array</li>
+    <li>An object</li>
+    <li>Date object</li>
+
+    <script>
+        let x = 10;        //number
+        let name = "shan"; //string
+        let y = true;      //boolean
+        const data = {     //object
+            firstname: "stark",
+            age: "22"
+        }
+
+        const laptop =["hp","lenovo","mac","dell"]  //array object
+
+        const Data = new Date("2023-01-19")       //date object
+    </script>
+
+    <p style="color: crimson;">Note: javascript variable can hold the any type of data type</p>
+     <h1>Number + string</h1>
+     <h2 id="head"></h2>
+     <script>
+        let a =1;
+        let brand = "yamaha";
+        const total = a + brand;
+        document.getElementById('head').innerHTML = total;
+     </script>
+       <h1>JS data types are dynamic</h1>
+       <script>
+        let b ;       //undefinied
+        b = 10;       //number
+        b = "heshana"; //string
+        document.write(b)
+       </script>
+
+       <p style="color: crimson;">Js are always  double(64 bit floating pointz</p>
+       <h1>BigInt</h1>
+       <p>used to store the integer with big values</p>
+       <script>
+        let d = BigInt("126687278672792928908232838209808")
+        document.write(d)
+       </script>
+       <h1>Boolean</h1>
+       <script>
+        let s = 5;
+        let h = 5;
+        document.write(h == s)
+       </script>
+       <h1>Arrays</h1>
+       <script>
+        const lap =["hp","lenovo","mac","dell"] 
+        document.write(lap[2])
+       </script>
+       <h1>Object</h1>
+       <script>
+        var store= {
+  id: 5,
+  firstname: "heshana",
+  lastname: "s",
+  email: "hesha@gmail.com",
+  password: "shan3348",
+  phonenumbeer: 7733551122,
+  status: 1
+}
+         document.write(store.firstname)
+       </script>
+       <h1>type of</h1>
+       <script>
+        document.write(typeof("shan")) 
+        document.write(typeof(3348))
+       </script>
+       <h1>Undefined</h1>
+       <script>
+        let bike;
+        document.write(bike)
+       </script>
+       <h1>Empty</h1>
+       <script>
+        const moped = "";
+        document.write(moped)
+       </script>
+</body>
+</html>

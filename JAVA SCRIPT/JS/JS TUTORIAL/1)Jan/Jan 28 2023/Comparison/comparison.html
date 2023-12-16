@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comparison </h1>
+    <h2>1) Comparsion operators</h2>
+    <li>==</li>
+    <li>===</li>
+    <li>!=</li>
+    <li>!==</li>
+    <li><</li>
+    <li>></li>
+    <li><=</li>
+    <li>>=</li>
+
+    <h2>2) Logical operators</h2>
+    <li>&&</li>
+    <p>Two conditions should be true </p>
+    <li>||</li>
+    <p>Any one condition should be true </p>
+    <li>!</li>
+    <p>Return true for false & false for true (Opposite)</p>
+    <script>
+        let s = 33;
+        let h = 48;
+        let h1 = 38;
+
+        document.write("1)&& operator =>",(s == h && h == h1 ))
+        document.write("<br/>","2)|| operator =>",(s == h || h == h1 ))
+        document.write("<br/>","3) ! operator =>", 
+        !(s == h)) 
+    </script>
+
+    <h2> 3)Conditional operator (Ternary)</h2>
+    <script>
+        let shan = 25;
+        let hemmu = 25;
+       marriage = (shan == hemmu) ? 
+       "Congrats u are gonna marry " : "u are not allowed";
+
+       document.write(marriage)
+    </script>
+
+    <h2>4) Comapring different type</h2>
+    <script>
+        document.write("1)number vs number = >",2 == 2)
+        document.write("<br/>","2) numbers vs string = >", 2 * "2")
+        document.write("<br/>","string vs string = >",
+        "33" * "48")
+    </script>
+     
+     <p style="color: red;"> <b>Note :-</b> strings vs number do the all math without data type (+ only do concat)</p>
+
+     <h2>5) ?? Nullish operator</h2>
+     <p>Return the second value if the first value is <span style="color: red;">null</span></p>
+     <p>Otherwise return the first value</p>
+     <script>
+        let test1 = null;
+        let test2 = "value2";
+        let test3 = "value3";
+
+        let math = test1 ?? test2;
+        let math2 = test3 ?? test2;
+
+        document.write(math2);
+        document.write("<br/>",math);
+
+     </script>
+
+      <h2>6) Optional chaining operator ? .</h2>
+      <p>Return the undefined if the value is undefined or null</p>
+
+      <script>
+        const laptops = {
+                laptop1 : "dell",
+                laptop2 : "hp",
+                laptop3 : "mac",
+                laptop4 : "lenovo",
+                laptop5 : "asus",
+        }
+        document.write(laptops.laptop1)
+        document.write("<br/>",laptops?.laptop6)
+
+      </script>
+</body>
+</html>

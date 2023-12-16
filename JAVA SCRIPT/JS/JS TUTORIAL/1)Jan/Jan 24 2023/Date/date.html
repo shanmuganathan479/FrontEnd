@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date()</h1>
+    <h1>1) Date() default</h1>
+    <p>Return the current date and time</p>
+    <script>
+        const d = new Date()
+        document.write(d)
+    </script>
+
+    <h2>2) Date("")</h2>
+    <p>Return the date and what we have passed inside the function</p>
+    <script>
+        const d1 = new Date("2025-01-01,01:00");
+        document.write(d1)
+    </script>
+     
+
+     <h2>3) Date(year,month -1,date,hour,mins,seconds) with multi arguments</h2>
+     <p>Return the date and what we have passed inside the function</p>
+     <script>
+         const d2 = new Date(2022,2,27,12,0,0,0);
+         document.write(d2)
+     </script>
+
+     <h2 style="color: red;">4)Date(1 args => can't do we need to provide a 2 args)</h2>
+      
+     <h2>5) Date () year as 2 letters conside 1990 19 th century</h2>
+
+     <script>
+        const d3 =new Date(47,4,18)
+        document.write(d3)
+     </script>
+
+
+     <h2>6) Display Dates</h2>
+     <script>
+        const d4 = new Date();
+        const d4c = d4.toDateString();
+        document.write(d4c,"<hr/>")
+        {
+           const  dc = d4.toISOString()
+            document.write(dc)
+        }
+     </script>
+
+
+
+
+    
+</body>
+</html>

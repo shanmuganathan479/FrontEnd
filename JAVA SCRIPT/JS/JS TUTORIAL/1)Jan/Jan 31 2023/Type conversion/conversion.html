@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversion</h1>
+
+    <h2>1) Number</h2>
+    <p>number method converts varaible into number</p>
+    <script>
+        document.write("<br/>","",)
+        document.write("<br/>","PI=>",Number(Math.PI))
+        document.write("<br/>","empty string=>",Number(""))
+        document.write("<br/>","number=>",Number(3348))
+        document.write("<br/>","number in strings=>",Number("3348"))
+        document.write("<br/>","strings=>",Number("shan"))
+    </script>
+
+    <h2>2) Unary +</h2>
+    <script>
+        let a = "5";
+        let b = + a;
+        document.write("<br/>","",typeof a,"<br/>",typeof b)
+    </script>
+
+    <h2>3) Numbers to strings</h2>
+    <script>
+        let c = String(100)
+        document.write("<br/>","converting to string",c,",<br/>",typeof c)     
+
+    </script>
+    <p style="color: red;">Note:- Number toString() also the does the same</p>
+
+    <h2>4) converting dates to numbers</h2>
+    <script>
+        const d = new Date();
+        let d1 = Number(d)
+        document.write("<br/>","normal date=>",d)
+        document.write("<br/>","After conversion=>",d1) 
+    </script>
+
+    <h2>5) Dates to strings</h2>
+    <script>
+        let d2 = String(Date());
+        document.write("<br/>","",d2)
+    </script>
+    <h3>with toString()</h3>
+    <script>
+        document.write("<br/>","",Date().toString())
+    </script>
+
+    <h2>6) Booleans to Numbers</h2>
+    <script>
+        document.write("<br/>","true  =>",Number(true))
+        document.write("<br/>","false =>",Number(false))
+    </script>
+
+    <h2>7) Automatic type conversion</h2>
+    <script>
+        document.write("<br/>","",5 + null)
+        document.write("<br/>","","5" + null)
+        document.write("<br/>","","5"+ 5)
+        document.write("<br/>","","5"*5)
+    </script>
+    <p style="color: red;">Note:- For + it does concat() remaining all operations it will does the opeartion</p>
+
+    <h2>8) Automatic string conversion</h2>
+    <p>js automatically convert the tostring() when u try to output object </p>
+
+    <h2>9) differeent data type conversion</h2>
+    <p>Number()</p>
+    <p>String()</p>
+    <p>Boolean()</p>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number methods</h1>
+
+    <h2>toString()</h2>
+    <p>return number as string</p>
+    <script>
+        let a = 100;
+        let b = a.toString()
+        document.write("intially=>",a,typeof(a),"\n","after conversion=>",b,typeof(b))
+    </script>
+
+    <h2>toExponotial</h2>
+    <p>round the number with args</p>
+    <script>
+        let c = 9.876;
+        let d = c.toExponential(c)
+        document.write(d,"\t",c.toExponential(2))
+    </script>
+
+    <h2>tofixed()</h2>
+    <p>round the values</p>
+    <script>
+        let e = 9.222232;
+        document.write(e.toFixed(4))
+    </script>
+
+    <h2>toPrecision()</h2>
+    <p>returns strings with specified number of values</p>
+    <script>
+        let f = 7.5664546;
+        document.write(f.toPrecision(2))
+    </script>
+     
+     <h2>valueOf()</h2>
+     <p>return value in number</p>
+     <script>
+        let g = 3348;
+        document.write(g.valueOf())
+     </script>
+
+     <h1>Converting variables to numbers</h1>
+     <li>Number()</li>
+     <li>parseInt()</li>
+     <li>parsefloat()</li>
+
+     <h2>Numbers()</h2>
+     <script>
+        let h = 10;
+        let i = true;
+        let j = "shan"
+        document.write(Number(h),"\t",Number(i),"\t",Number(j))
+     </script>
+
+     <h2>parseInt()</h2>
+     <script>
+        document.write(parseInt(33.48))
+     </script>
+
+     <h2>parsefloat()</h2>
+     <script>
+        document.write(parseFloat(33.1))
+     </script>
+
+     <h2>Number integer</h2>
+     <li>isInteger()</li>
+     <li>isSafeInteger()</li>
+     <script>
+        document.write(Number.isInteger(100),"\t",Number.isInteger(100.33))
+     </script>
+     <script>
+        document.write("\t",Number.isSafeInteger(1878968686861728781979872181),)
+     </script>
+</body>
+</html>

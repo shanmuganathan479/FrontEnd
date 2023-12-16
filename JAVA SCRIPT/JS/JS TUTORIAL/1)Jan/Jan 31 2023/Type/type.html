@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type</h1>
+    <ol> 5 data type contain values
+        <li>string</li>
+        <li>boolean</li>
+        <li>number</li>
+        <li>object</li>
+        <li>function</li>
+    </ol>
+
+    <ol> object
+        <li>Array</li>
+        <li>date</li>
+        <li>string </li>
+        <li>number</li>
+        <li>object</li>
+        <li>boolean</li>
+    </ol>
+
+    <ol> does not contain values
+        <li>null</li>
+        <li>undefined</li>
+    </ol>
+    <h2>1) typeof()</h2>
+    <p>used to return the data type </p>
+    <script>
+        document.write("<br/>","words =>",typeof("shan"))
+        document.write("<br/>","number=>",typeof(33))
+        document.write("<br/>","true or false=>",typeof(false))
+        document.write("<br/>","object=>",typeof({name:"shan"}))
+        document.write("<br/>","array=>",typeof([1,2]))
+        document.write("<br/>","Not a number=>",typeof(NaN))
+        document.write("<br/>","Date =>",typeof(new Date()))
+        document.write("<br/>","function=>",typeof(function myfunc(){}))
+        document.write("<br/>","undefined variable=>",typeof( x))
+        document.write("<br/>","null=>",typeof(null))   
+    </script>
+     
+     <h2>2) primitive data</h2>
+     <p>single simple data with no additional props and methods</p>
+     <li>string</li>
+     <li>number</li>
+     <li>boolean</li>
+     <li>undefined</li>
+
+     <h2>3) complex data</h2>
+     <p>type of opeator return one of two complex types</p>
+     <li>object(object,array,date,null)</li>
+     <li>function</li>
+
+    <h2>4) Date Type of => type</h2>
+    <p style="color: red;"> type of is operator it does not have any data type it always return the string</p>
+
+    <h2>5) constructor </h2>
+    <p>constructor property always return the constructor function</p>
+    <script>
+        document.write("<br/>",typeof((3).constructor))
+        document.write("<br/>",typeof("shan".constructor))
+    </script>
+
+    <h2>6) undefined</h2>
+    <p>the data type undefined is also undefined</p>
+    <script>
+        document.write("<br/>","undefined =>",typeof(undefined))
+        document.write("<br/>","not assigned variable=>",typeof(s))
+    </script>
+
+    <h2>7) Empty values</h2>
+    <p>empty string data type is string</p>
+    <script>
+        let name = "";
+        document.write("<br/>","empty string =>",typeof(name))
+    </script>
+
+    <h2>8) null</h2>
+    <p>null data type is object</p>
+    <p style="color:red">You can consider this like a bug js consider null as object but it does not contain anything so it should be null</p>
+    <p>you can assign object to null</p>
+
+    <h2>9) Null vs undefined</h2>
+    <p>Null and undefined are same but differeent data type</p>
+    <script>
+        document.write("<br/>",null == undefined)
+        document.write("<br/>",null === undefined)
+    </script>
+    
+    <h2>10) instance of </h2>
+    <p>instance of true if its real instance of specified object</p>
+    <script>
+        let lap = ["dell","hp"]
+        document.write("<br/>",lap instanceof Array)
+        document.write("<br/>",lap instanceof Object)
+        document.write("<br/>",lap instanceof String)
+
+    </script>
+
+    <h2>11) void</h2>
+    <p>used to evaluate expression primitive value</p>
+    <p>Example:- valid link and useless link</p>
+
+
+</body>
+</html>

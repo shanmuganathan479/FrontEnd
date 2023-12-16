@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p>json is format to store and transporting data</p>
+    <p>json used to sent data from server to webpage</p>
+
+    <ol>
+        JSON
+        <li>Java Script Object Notation
+        </li>
+        <li>light weight and interchange data</li>
+        <li>ec to describe</li>
+        <li>language independent</li>
+    </ol>
+
+    <h2>Example</h2>
+    <p>{
+        "employees":[
+          {"firstName":"John", "lastName":"Doe"},
+          {"firstName":"Anna", "lastName":"Smith"},
+          {"firstName":"Peter", "lastName":"Jones"}
+        ]
+        }</p>
+
+        <h2>1) Rules</h2>
+        <ol>
+            <li>Key and pair values</li>
+            <li>separate by comma</li>
+            <li>{} hold object</li>
+            <li>[] hold arrays</li>
+        </ol>
+
+        <h2>2) Key and  value</h2>
+
+        <p>"name": "shan"</p>
+
+        <h2>3) Object</h2>
+
+        <p>{"name": "shan"}</p>
+
+        <h2>4) Array</h2>
+        <p>{"data"[{"name": "shan"}]}</p>
+           
+        <h2>5) converting JSON to object</h2>
+        <script>
+            let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+      let con = JSON.parse(text)
+
+      console.log(con);
+    document.write(con.employees[0].firstName)
+
+        </script>
+    
+</body>
+</html>

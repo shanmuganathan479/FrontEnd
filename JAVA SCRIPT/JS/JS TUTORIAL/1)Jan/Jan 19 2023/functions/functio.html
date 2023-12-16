@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        border: 2px solid violet;
+      } 
+      .shan{
+        color: blue;
+      }
+
+    </style>
+</head>
+<body  >
+    <h1 class="shan">Function</h1>
+    <p>Function is a block of code to perform particular task when its invoke <span style="color: firebrick;">(calling function)</span></p>
+    <ol>Why functions ?
+        <li>To reuse the code</li>
+        <li>write once</li>
+        <li>Pass diff arguement</li>
+        <li>get diff output</li>
+    </ol>
+    <h2 id="ans"></h2>
+    <script>
+        function add(x,y)
+        {
+          return x+y
+        }
+        document.getElementById('ans').innerHTML = add(100,8)
+    </script>
+       <h1>local</h1>
+       <script>
+        mul();
+        var bike2 = "r15";
+        function mul(){
+            let bike = "fz"
+            document.write(bike)
+        }
+        document.write(bike2)   // I cant access bike here becoz that is local scope only applicable for that block
+
+       </script>
+   
+</body>
+</html>

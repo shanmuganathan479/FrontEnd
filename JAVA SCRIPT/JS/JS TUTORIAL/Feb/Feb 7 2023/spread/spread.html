@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread</h1>
+    <p style="color: red;"> (...) allow us to copy all part of existing array or object to new array or object</p>
+    <h2>EX1</h2>
+    <script>
+        const arr1 = [11,12,13,14,15];
+        const arr2 = [21,22,23,24,25];
+
+        const store = [...arr1,]
+        document.write(store)
+    </script>
+
+    <h2>Destructring</h2>
+    <p>spread operator based on Destructring</p>
+    <script>
+        const sample = [22,99,11,22,11,33,45,55,55,33];
+
+        const [one,two,three, ...rest] = sample;
+        document.write(one,"<br/>")
+        document.write(two,"<br/>")
+        document.write(three,"<br/>")
+        document.write(rest,"<br/>")
+    </script>
+
+    <h2>Objects</h2>
+    <script>
+        let lap={
+            name: "DELL",
+            OS: "ubuntu",
+            price: 21000
+        }
+
+        let lap2={
+            nam: "APPLE",
+            O: "mac os",
+            pri: 121000
+        }
+        
+        const total = {...lap, ...lap2}
+        console.log(total);
+
+    </script>
+  
+  <p>open console Window</p>
+  
+  <p style="color: red;">spread operator break the array into individual elements</p>
+
+    
+</body>
+</html>

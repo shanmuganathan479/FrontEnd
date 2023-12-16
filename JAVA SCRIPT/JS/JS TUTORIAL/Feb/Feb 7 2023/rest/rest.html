@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rest oprator</h1>
+    <p>treats args as an array</p>
+    <script>
+       const shan =(...args)=>{ //rest operaror
+
+            return args.reduce((total,value)=> total+value)   
+       }
+         
+       const value1 = [11,22,33];
+       const value2 = [44,55,66];
+
+       let ans = shan(...value1, ...value2)  // here spread operator
+       document.write(ans)
+
+    </script>
+    
+    <p style="color:red"> list of values converted to single array</p>
+</body>
+</html>

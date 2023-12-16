@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numbers</h1>
+    <p style="color: red;">Only one type of number with decimal and without decimal</p>
+    
+    <h2>Exponent notation</h2>
+    <script>
+        let x = 3348e5;
+        document.write(x)
+    </script>
+
+    <h2>Number + Strings</h2>
+    <p>join strings no arithmetic</p>
+    <script>
+        let a = 33;
+        let b = "48";
+        document.write(a+b)
+    </script>
+
+    <h2>Numeric strings</h2>
+    <p>do the arithmetic</p>
+    <script>
+        let c = "33";
+        let d = "33";
+        document.write(c/d)
+    </script>
+
+    <h2>Nan => Not an number</h2>
+    <script>
+        let e = 5;
+        document.write(5*"shan")
+    </script>
+
+    <h2>Infinity</h2>
+    <script>
+        document.write(33/0)
+    </script>
+
+    <h2>HexaDecimal</h2>
+    <script>
+        let fav = 3348;
+        let con = fav.toString(16)
+        document.write(con)
+    </script>
+    
+    <h2>Numbers as object</h2>
+    <script>
+        let s = 3348;
+        let s1 = typeof(s)
+        let h = new Number(3348)
+        let h1 = typeof(h)
+
+        document.write(`type of s is ${s1}`,`type of s is ${h1}`)
+        document.write(`${s==h},${s===h}`)
+    </script>
+    
+
+</body>
+</html>

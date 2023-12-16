@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promise </h1>
+    <p style="color: red;">Producing code can take some time</p>
+    <p style="color: red;">Consuming code wait for the result</p>   
+    <p style="color: red;">Promise is js object that link Producing code and consuming code</p>
+
+    <h2>1) PROPERTIES</h2>
+    <ol>
+        <li>Pending</li>
+        <li>Fullfilled</li>
+        <li>Rejected</li>
+    </ol>
+    <p style="color: red;"> Promise object suppport two objects state and result</p>
+
+    <h2>2) HOW TO USE</h2>
+    <p>promise.then( function(value); function(error))</p>
+
+    <h2>3) EXAMPLE</h2>
+    <script>
+        function display(value){
+            document.write(value)
+        }
+        let myPromise = new Promise(function(resolve,reject){
+
+            let age = 22;
+            if (age > 18) {
+                resolve("YOU ARE AN ADULT")
+                
+            } else {
+                reject("YOU ARE NOT AN ADULT")
+            }
+        })
+       
+        myPromise.then(
+            function(value) {display(value)},
+            function(error) {display(error)},
+        )
+    </script>
+
+    <h2>4) EXAMPLE </h2>
+    <h2 id="ans"></h2>
+    <script>
+
+        const myPro = new Promise(function(resolve,reject){
+            setTimeout(function(){ resolve("HI BABY")},3000)
+        });
+        
+        myPro.then(function(val){
+          document.getElementById('ans').innerHTML = val;
+        })
+    </script>
+</body>
+</html>

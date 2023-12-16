@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reg Exp</h1>
+    <p>Regular expression sequence of characters that performs search pattern</p>
+    <p>Search pattern used to search and replace opeartions</p>
+    <p>Use :- used to search data </p>
+    <p>Reg exp can perform any type of search and replace opeartion</p>
+     
+    <h2>1) SYNTAX</h2>
+    <p>pattern/modifiers</p>
+    <p>Eg : /shanpapa/i</p>
+    <p>shanpapa is search pattern </p>
+    <p>i -> modifiers (case Senstive)</p>
+
+    <h2>2) Using string serach()</h2>
+    <p>it will search and return the starting posistion</p>
+    <script>
+        var name = "shanmuganathan hemmu";
+        let s = name.search("hemmu");
+        document.write(s)
+    </script>
+
+    <h2>3) using search with Regular expression()</h2>
+    <p>we can perform case sensitve search()</p>
+    <script>
+        let sr = name.search(/Hemmu/i)
+        document.write(sr)
+    </script>
+
+    <h2>4) Using string replace()</h2>
+    <button onclick="changeName()">Replace</button>
+    <p id="ans" >shan</p>
+    <script>
+        function changeName(){
+
+            let change = document.getElementById("ans").innerHTML;
+            document.getElementById("ans").innerHTML= change.replace("shan","stark");
+        }
+    </script>
+
+     <h2>5) Using  replace() with reg exp()</h2>
+    <button onclick="changeName()">Replace</button>
+    <p id="ans1" >shan</p>
+    <script>
+        function changeName(){
+
+            let change = document.getElementById("ans1").innerHTML;
+            document.getElementById("ans1").innerHTML= change.replace(/ShAn/i,"stark");
+        }
+    </script>
+
+    <p style="color: red;">Note :- Regular expression perform more powerful operation like case insenstive</p>
+     
+    <h2>6) Modifiers</h2>
+    <li>i => case insenstive</li>
+    <li>g => global match</li>
+    <li>m => multiline match</li>
+     
+    <h3>[] brackets are range</h3>
+    <li>[a-c] => a to c</li>
+    <li>[0-9] => 0 to 9</li>
+    <li>(shan|hemmu) => only this value</li>
+    
+    <h3>meta characters special meaning</h3>
+    <h3>quantifiers => qauntities</h3>
+
+    <h2>7) test()</h2>
+    <p>tests the value and return true or false</p>
+    <script>
+        let p = /z/
+        document.write("Test the name=>",p.test(name))
+    </script>
+
+    <h2>8) exec</h2>
+    <p>find and the return the obj(obj[0]) and position (obj.index)</p>
+    <script>
+        let ex = /s/.exec("shans")
+        document.write("object =>",ex[0],"<br/>","index =>",ex.index)
+    </script>
+</body>
+</html>

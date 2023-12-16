@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <h2>length</h2>
+    <script>
+        let count = "hema shan";
+        document.write(count.length)
+    </script>
+    <h1>Extracting strings</h1>
+    <h2>slice(start,end)</h2>
+    <p>used to slice the value from start to end</p>
+    <script>
+        let big = "shanmuganathan selvakumar"
+        document.write(big.slice(7,12))
+    </script>
+    <h2>substring(start,end)</h2>
+    <p>same like slice</p>
+    <script>
+        let bi = "shanmuganathan selvakumar"
+        document.write(bi.substring(8,14))
+    </script>
+    <h3>negative taken from the end</h3>
+    <p id="ans"></p>
+    <script>
+        let values = "shanmuganathan selvakumar";
+        document.getElementById('ans').innerHTML = values.substring(-1)
+    </script>
+    <h2>substr(start,length)</h2>
+    <p>takes start and length args</p>
+    <p id="ans1"></p>
+    <script>
+        let value = "shanmuganathan selvakumar";
+        document.getElementById('ans1').innerHTML = value.substr(6,4)
+    </script>
+    <h2>replace()</h2>
+    <p>replace the words</p>
+    <li>Does not change string</li>
+    <li>return new string</li>
+    <li> only change the first value</li>
+     <button  onclick="myfunc()">click</button>
+     <p id="but"> SHAN PAPA</p>
+    <script>
+       function myfunc()
+        {
+          let shan =  document.getElementById('but').innerHTML;
+          document.getElementById('but').innerHTML= shan.replace("SHAN","STARK")
+        }       
+    </script>
+     <h2>replaceAll()</h2>
+     <p>replaceAll the words</p>
+      <button  onclick="myfunc1()">replace all</button>
+      <p id="but1"> hesha shan papa shan</p>
+     <script>
+        function myfunc1()
+         {
+           let shan =  document.getElementById('but1').innerHTML;
+           document.getElementById('but1').innerHTML= shan.replace("shan","starK")
+         }       
+     </script>
+     <h2>toUppercase</h2>
+     <p>convert all lower case to uppercase</p>
+     <script>
+        let change = "shan stark hesha hemmu"
+        document.write(change.toUpperCase())
+     </script>
+      <h2>toLowercase</h2>
+      <p>convert all upper case to lowercase</p>
+      <script>
+         let change1= "SHAN STARK HESHA HEMMU"
+         document.write(change.toLowerCase())
+      </script>
+      <h2>concat()</h2>
+      <p>used to merge the strings</p>
+      <script>
+        let lname= "shan";
+        document.write(lname.concat("hemmu"))
+      </script>
+      <p style="color: brown;">
+    Note: All js methods are return new string dont modify the  string </p>
+      <h2>trim()</h2>
+      <p>used to trim unwanted spaced</p>
+      <script>
+        let space = "      shan"
+        let wspace = space.trim()
+       document.write(space.length,"=>",wspace.length)
+      </script>
+      <h2>trimstart()</h2>
+      <p>trim the starting space</p>
+      <script>
+        let msg = "      shan        stark";
+        let withTrimEnd = msg.trimStart()
+        document.write(msg.length,"=>",withTrimEnd.length)
+      </script>
+      <h2>trimend()</h2>
+      <p>trim the space from the end</p>
+      <script>
+       let vals = "    shan stark    !              ";
+       let withEnd = vals.trimEnd()
+       document.write(vals.length,"=>",withEnd.length)
+      </script>
+      <h2>padStart()</h2>
+      <p>used to give the padding to start</p>
+      <script>
+        let pad = "shan"
+        document.write(pad.padStart(8,"-"))
+      </script>
+      <h2>padEnd()</h2>
+      <p>used to give the padding to end</p>
+      <script>
+              let pend = "stark"
+            document.write(pend.padEnd(8,"*"))
+
+      </script>
+      <h2>To pad a number convert number to string first</h2>
+      <script>
+        let num = 8;
+        let con = num.toString()
+        document.write(con.padStart(3,9))
+      </script>
+      <h2>charAt()</h2>
+      <p>used to return the character at the specified position (index)</p>
+      <script>
+        let test = "Hello paps";
+        document.write(test.charAt(6))
+      </script>
+      <h2>charcodeAt()</h2>
+      <p>used to return unicode of the character</p>
+      <p id="sss"></p>
+      <script>
+        let s = "This is stark";
+        document.getElementById('sss').innerHTML = s.charCodeAt(0)
+      </script>
+      <h2>Property access</h2>
+      <p>used to access property</p>
+      <script>
+        let pTest = "Shan stark";
+        document.write(pTest[0])
+      </script>
+      <h2>split()</h2>
+      <script>
+        let sTest = "shan,stark,papa";
+        let conv = sTest.split(",");
+        document.write(sTest, "=>",conv[1])
+      </script>
+</body>
+</html>

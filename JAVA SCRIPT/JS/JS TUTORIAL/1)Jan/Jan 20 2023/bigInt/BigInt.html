@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BigInt</h1>
+    <p>This is used to store big integer values upto</p>
+    <script>
+        let x = BigInt(16651778762616189278917987127719);
+        let type = typeof(x)
+        document.write(type,"\t",x)
+    </script>
+
+    <h2>Min & Max integer</h2>
+    <script>
+        let a = Number.MIN_SAFE_INTEGER
+        let b = Number.MAX_SAFE_INTEGER
+        document.write(a,"\t",b)
+    </script>
+
+    <h2>isInteger(), safeInteger()</h2>
+    <script>
+        document.write(Number.isInteger(100),"\n",
+        Number.isInteger(100.3),
+        "\n",
+        Number.isSafeInteger(10),
+        "\n",
+        Number.isSafeInteger(106689877897797978789789778),
+        )
+    </script>
+</body>
+</html>

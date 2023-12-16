@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Switch case</h1>
+    <p>Switch is used to perfom different actions based on condition</p>
+    <h3>syntax</h3>
+    <p>
+        switch(expression)
+        {
+            case 1;
+            case 2;
+            case 3;
+            default;
+        }
+    </p>
+
+    <script>
+       let year ;
+
+       switch(new Date().getFullYear()){
+         
+        case 2022:
+            year = "twenty twenty two";
+            break;
+         case 2023:
+            year = "twenty twenty three";
+            break;
+       }
+       document.write("Years in words=>",year)
+    </script>
+    <p>Break => it will exit from the block</p>
+    <p>If none of the condition match execute the default block</p>
+
+    <script>
+          let year1 ;
+
+       switch(new Date().getFullYear()){
+         
+        case 2022:
+            year1 = "twenty twenty two";
+            break;
+         case 2024:
+            year1 = "twenty twenty three";
+            break;
+        default:
+            year1= "could not get"
+            break;
+       }
+       document.write("Years in words=>",year1)
+
+    </script>
+    
+</body>
+</html>
