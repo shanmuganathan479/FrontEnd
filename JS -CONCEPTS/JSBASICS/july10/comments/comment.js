@@ -1,0 +1,1 @@
+console.log("Line with // is called comment it doesn't executed")
