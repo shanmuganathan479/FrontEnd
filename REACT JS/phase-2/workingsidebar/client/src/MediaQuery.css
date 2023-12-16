@@ -1,0 +1,542 @@
+  html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
+     /* For extra small devices */
+  @media screen  and (max-width:359px) and (min-width:98px)
+{ 
+ #head
+{
+  font-size:17px;    
+} 
+ #searchBar
+{ 
+  padding:20px;
+  padding-left:-400px;
+  margin-left:-570px;    
+}
+.content
+{
+  display:grid;
+  grid-template-columns:55%;
+  margin: right 40px;
+ } 
+}
+
+  /* For mobile devices */
+ @media screen and (max-width:529px) and (min-width:360px)
+{ 
+ #head
+{
+  font-size:21px;    
+} 
+.content
+{
+  display:grid;
+  grid-template-columns:100%;
+ }  
+ .subContent  
+ {
+   padding-left:-120px;
+ }
+ .mainBar
+ {
+   float:Top;
+ }
+ .homeContent 
+ {
+   margin-left:100px; 
+  display: grid;
+  text-align:center;  
+ }
+ .active .homeContent
+ {
+   margin-left:120px;
+   margin-top:-340px;
+ }
+ .sidebar
+{
+  background-color: skyblue;
+  width:70px;
+  height:100%;
+}
+.sidebar.active
+ {
+   visibility: visible;
+   width:110px;
+   background-color:skyblue;
+   color:black;
+   font-weight: bold;
+   padding:6px 14px;
+   height:100%; 
+ }
+ .active .sidebarName
+{
+  visibility:visible; 
+  margin-left:-45px;
+  font-size:15px;
+}
+ .active .items
+{
+  visibility:visible; 
+  margin-left:-20px;
+}
+.active #button
+{
+  margin-left:70px;
+  margin-top:30px;
+}
+}
+/* mini tab and ipad and mobile landscape devices */
+@media screen and (max-width:800px) and (min-width:530px)
+{ 
+ #head
+{
+  font-size:40px;    
+} 
+ #searchBar
+{  
+  margin-left:-200px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:50% 50%;
+ } 
+  .homeContent 
+ {
+   margin-left:160px;
+   margin-top:-350px;
+  display: grid;
+  text-align:center;  
+ }
+ .active .homeContent
+ {
+   margin-left:200px;
+   margin-top:-340px;
+ }
+ .sidebar
+{
+  background-color: skyblue;
+  width:70px;
+  height:100%;
+}
+.sidebar.active
+ {
+   visibility: visible;
+   width:160px;
+   background-color:skyblue;
+   color:black;
+   font-weight: bold;
+   padding:6px 14px;
+   height:100%; 
+ }
+ .formContent
+{
+  outline:1px solid black;
+  margin-left:100px ;
+  margin-right:100px ;
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: skyblue;
+  border-radius:5px;
+}
+
+}
+    /* For landscape mobile  and ipad devices */
+ @media screen and (max-width:850px) and (min-width:800px)
+{ 
+ #head
+{
+  font-size:40px;    
+} 
+ #searchBar
+{  
+  margin-left:-200px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:33.33% 33.33% 33.33%;
+ } 
+ .homeContent 
+ {
+   margin-left:30px;
+   margin-top:-350px;
+  display: grid;
+  text-align:center;  
+ }
+ .sidebar
+{
+  background-color: skyblue;
+  width:40px;
+  height:100%;
+}
+.active .homeContent
+ {
+   margin-left:230px;
+   margin-top:-340px;
+ }
+ .active .content
+ {
+  display:grid;
+  grid-template-columns:50% 50%;
+ } 
+ .sidebar.active
+ {
+   visibility: visible;
+   width:160px;
+   background-color:skyblue;
+   color:black;
+   font-weight: bold;
+   padding:6px 14px;
+   height:100%;  
+ }
+
+ .formContent
+{
+  outline:1px solid black;
+  margin-left:220px ;
+  margin-right:220px ;
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: skyblue;
+  border-radius:5px;
+}
+
+}
+/* For ipad devices */
+@media screen and (max-width:1050px) and (min-width:850px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-200px;  
+}
+.content
+{ 
+  display:grid;
+  grid-template-columns:33.33% 33.33% 33.33%;
+ }  
+ .homeContent 
+ {
+   margin-left:140px;
+   margin-top:-350px;
+  display: grid;
+  text-align:center;  
+ }
+ .active .homeContent
+ {
+   margin-left:185px;
+   margin-top:-340px;
+ }
+.active .content
+{
+ display:grid;
+ grid-template-columns:33.33% 33.33% 33.33%;
+} 
+.sidebar.active
+{
+  visibility: visible;
+  width:160px;
+  background-color:skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%; 
+}
+.formContent
+{
+  outline:1px solid black;
+  margin-left:220px ;
+  margin-right:220px ;
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: skyblue;
+  border-radius:5px;
+}
+
+}
+     /* For laptop and ipad landscape devices */
+ @media screen and (max-width:1200px) and (min-width:1050px)
+ { 
+  #head
+ {
+   font-size:70px;    
+ } 
+  #searchBar
+ { 
+   margin-left:-50px;  
+ }
+ .content
+ {
+   display:grid;
+   grid-template-columns:25% 25% 25% 25%;
+  }  
+  .homeContent 
+ {
+   margin-left:90px;
+   margin-top:-350px;
+  display: grid;
+  text-align:center;  
+ }
+ .active .homeContent
+ {
+   margin-left:255px;
+   margin-top:-340px;
+ }
+ .active .content
+ {
+   display:grid;
+   grid-template-columns:33.33% 33.33% 33.33%;
+  } 
+ }
+ /*  Slightly bigger laptop and ipad landscape devices */
+ @media screen and (max-width:1279px) and (min-width:1200px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-50px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25%;
+ }  
+ .homeContent 
+{
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+.active .homeContent
+{
+  margin-left:235px;
+  margin-top:-340px;
+}
+.active .content
+{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25% ;
+ } 
+}
+/*  bigger laptop (dont touch all are fine) */
+@media screen and (max-width:1400px) and (min-width:1280px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-50px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25%;
+ }  
+ .homeContent 
+{
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+.active .homeContent
+{
+  margin-left:200px;
+  margin-top:-340px;
+}
+.active .content
+{
+  display:grid;
+  grid-template-columns:25% 25% 25% 25% ;
+ } 
+ .sidebar.active
+{
+  visibility: visible;
+  width:160px;
+  background-color:skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%; 
+}
+.active #button
+{
+  margin-left:125px;
+  margin-top:30px;
+}
+} 
+/*  desktop */
+@media screen and (max-width:1700px) and (min-width:1400px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-50px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+ }  
+
+ .homeContent 
+{
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+.active .homeContent
+{
+  margin-left:200px;
+  margin-top:-340px;
+}
+.active .content
+{
+  display:grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+ } 
+ .sidebar.active
+{
+  visibility: visible;
+  width:160px;
+  background-color:skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%; 
+}
+.active #button
+{
+  margin-left:125px;
+  margin-top:30px;
+}
+} 
+/* Biggerb desktop  and tv*/
+@media screen and (max-width:1900px) and (min-width:1700px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-50px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:16.66% 16.66% 16.66% 16.66% 16.66% 16.66% ;
+ }  
+ .homeContent 
+{
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+.active .homeContent
+{
+  margin-left:200px;
+  margin-top:-340px;
+}
+.active .content
+{
+  display:grid;
+  grid-template-columns:16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+ } 
+ .sidebar.active
+{
+  visibility: visible;
+  width:160px;
+  background-color:skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%; 
+}
+.active #button
+{
+  margin-left:125px;
+  margin-top:30px;
+}
+} 
+
+/* Massive screens */
+@media screen and (max-width:2150px) and (min-width:1900px)
+{ 
+ #head
+{
+  font-size:70px;    
+} 
+ #searchBar
+{ 
+  margin-left:-50px;  
+}
+.content
+{
+  display:grid;
+  grid-template-columns:14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+ }  
+ .homeContent 
+{
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+.active .homeContent
+{
+  margin-left:200px;
+  margin-top:-340px;
+}
+.active .content
+{
+  display:grid;
+  /* grid-template-columns:33.33% 33.33% 33.33%; */
+  grid-template-columns:14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+ } 
+ .sidebar.active
+{
+  visibility: visible;
+  width:160px;
+  background-color:skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%; 
+}
+.active #button
+{
+  margin-left:125px;
+  margin-top:30px;
+}
+} 
+
+
+
+
+
+
+
+
+   
+   
+
+

@@ -1,0 +1,303 @@
+ #head
+{
+    margin:20px;
+    padding:20px;
+    font-size:60px;
+    background-color:black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    border-radius:5px;
+    border-color: beige;   
+}
+/* .content
+{
+   display:grid;
+  grid-template-columns:25% 25% 25% 25%;
+  margin-left:-530px;
+  text-align:center; 
+ }  */
+/* #search
+{
+   
+} */
+
+#noMobileFound
+{
+  margin-left: 600px;
+}
+.subContent  
+{
+  outline:1px solid black;
+  margin-top:60px;
+  margin-right:35px;
+  margin-left:18px;
+  margin-bottom:60px;
+}
+ /* #searchBar
+{
+ 
+} */
+
+/* .menu
+{ 
+  margin-left:30px;
+  color: beige;
+  background-color: black;
+  width:10%;
+  padding-left:5px;
+  padding-bottom:70%;
+  margin-bottom:50px;
+}
+.menuItems
+{
+  color:whitesmoke;
+  background-color: black;
+  padding-bottom:30px;
+ 
+}
+.headerMenu
+{
+  margin-left:47px;
+  margin-top:-30px;
+}
+ .headerImage
+{
+  width:35px;
+} */
+
+.sidebar
+{
+  background-color:skyblue;
+  width:70px;
+  height:100%;
+}
+.sidebar #button
+{
+  margin-left:5px;
+}
+.sidebar .sidebarName
+{
+  visibility: hidden; 
+}
+.sidebar .items
+{
+  visibility: hidden; 
+}
+
+ .active .sidebarName
+{
+  visibility:visible; 
+}
+
+ .active .items
+{
+  visibility:visible; 
+}
+.active #button
+{
+  margin-left:150px;
+  margin-top:30px;
+}
+.sidebar.active
+{
+  visibility: visible;
+  width:200px;
+  background-color: skyblue;
+  color:black;
+  font-weight: bold;
+  padding:6px 14px;
+  height:100%;
+  
+}
+
+.sidebarName
+{
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
+}
+#button
+{
+  margin-left:300px;
+ 
+}
+.sidebar ul
+{
+  margin-top:20px;
+  margin-left:-30px;
+}
+.sidebar ul li
+{
+  position: relative;
+  height:50px;
+  width:100%;
+  margin:0 5px;
+  list-style: none;
+  line-height:50px;
+  min-width:50px;
+  margin-bottom:10px;
+  
+}
+
+
+
+.homeContent 
+{
+ 
+  margin-left:170px;
+  margin-top:-350px;
+ display: grid;
+ text-align:center;  
+}
+ .active .homeContent
+{
+  margin-left:220px;
+  margin-top:-300px;
+}
+
+
+
+
+
+
+
+.formContent
+{
+  outline:1px solid black;
+  margin-left:400px ;
+  margin-right:400px ;
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: skyblue;
+  border-radius:5px;
+}
+
+.formHeader1
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-140px;
+}
+.formHeader2
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-140px;
+}
+.formHeader3
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-170px;
+}
+.formHeader4
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-110px;
+}
+.formHeader5
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-190px;
+}
+.formHeader6
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-120px;
+}
+.formHeader7
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-100px;
+}
+.formHeader8
+{
+ font-weight:900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ margin-left:-90px;
+}
+
+
+.formBox
+{
+  padding: 8px 24px;
+  background-color:whitesmoke;
+  border:2px solid;
+
+}
+.formDropDown
+{
+  padding: 9px 50px;
+  background-color:whitesmoke;
+  border:2px solid;
+}
+.formDropDown2
+{
+  padding: 9px 66px;
+  background-color:whitesmoke;
+  border:2px solid;
+}
+
+
+.submitButton
+{
+  background-color:whitesmoke;
+}
+.femaleButton
+{
+  margin-right: -16px;
+}
+.othersButton
+{
+  margin-right: -14px;
+}
+#submitButton
+{
+  padding: 8px 50px;
+  background-color:whitesmoke;
+  font-size: medium;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-color:black;
+   border:2px solid;
+   border-radius:15px;
+   font-weight: 800;
+   background-color:whitesmoke;
+   
+}
+
+.errorMessage
+{
+  color: red;
+}
+
+.phoneDropdown
+{
+  padding: 7px 1px;
+  border:2px solid;
+  border-color:black;
+  background-color: whitesmoke;
+}
+
+#Number
+{
+  padding: 8px 2px; 
+}
+table,thead,tbody,th,td,tr
+{
+  border:1px solid;
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+ 

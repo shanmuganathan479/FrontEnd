@@ -1,0 +1,15 @@
+th{
+  border: 5px solid rgb(14, 3, 138);
+  font-size: 50px;
+}
+
+td{
+  border: 5px solid rgb(3, 5, 111);
+  font-size: 30px;
+}
+table{
+ border-collapse: collapse; 
+}
+div{
+  margin: 225px;
+}

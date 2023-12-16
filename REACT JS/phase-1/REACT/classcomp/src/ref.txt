@@ -1,0 +1,85 @@
+import React from 'react'
+// const MyComponent=(props)=>
+// {
+//   return(
+// <h2>
+//   again another funct {props.name}
+// </h2>
+// )
+// }
+
+class App extends React.Component
+{
+  constructor(props)
+  {
+  console.log("constructor")
+  super(props)
+  this.state=
+  {
+   name:"shan",
+   id:"109"
+  }
+}
+
+// myElements=(city)=>
+// {
+//   return(
+//  <h3> another func {city}</h3> 
+//  )
+// }
+
+handleClick=()=>
+{
+  this.setState({name:"hemmu"})
+}
+
+shouldComponentUpdate(prevState,nextState)
+{
+if (this.state.name == nextState.name) 
+{
+  return false
+} else 
+{
+  return true
+}
+}
+render()
+{
+  let {name,id}=this.state
+  return(
+    <>
+    <h1 onClick={this.handleClick}> this is render
+
+<p>{name}</p>
+<p>{id}</p>
+
+    </h1> 
+    {/* {this.myElements("vkd")}
+    
+    
+   <MyComponent
+   name="hemmu"
+   />
+   <SecondComp/>
+   */}
+
+    </> 
+  )
+}
+componentDidMount()
+{
+  console.log("this is cdm")
+}
+}
+// class SecondComp extends App
+// {
+//   render()
+//   {
+//     return(
+//       <h2> second compe{this.state.name}</h2>
+//     )
+    
+//   }
+// }
+
+export default App;

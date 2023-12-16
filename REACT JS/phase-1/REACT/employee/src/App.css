@@ -1,0 +1,14 @@
+th{
+  border: 1px solid black;
+  font-size: 40px;
+}
+td{
+  border: 1px solid black;
+  font-size: 20px;
+}
+table{
+  border-collapse: collapse;
+}
+.main{
+  margin: 150px;
+}
